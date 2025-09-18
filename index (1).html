@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- WhatsApp preview (Open Graph) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Untuk Ayank ❤️">
+  <meta property="og:description" content="Pesan kecil buat kamu, ayank tersayang 💕">
+  <meta property="og:image" content="https://misbahul.github.io/ayang/og-image.jpg"><!-- ganti setelah hosting -->
+  <meta property="og:url" content="https://misbahul.github.io/ayang/">
+
+  <title>Untuk Ayank ❤️</title>
+
+  <style>
+    body {
+      margin:0;
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(180deg,#ffeef5,#fff);
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-height:100vh;
+    }
+    .card {
+      background:white;
+      border-radius:20px;
+      box-shadow:0 8px 24px rgba(0,0,0,0.1);
+      padding:24px;
+      max-width:420px;
+      text-align:center;
+    }
+    h1 {
+      color:#ff4b77;
+    }
+    p {
+      font-size:18px;
+      color:#555;
+    }
+    .emoji {
+      font-size:32px;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%{transform:translateY(0);}
+      50%{transform:translateY(-8px);}
+      100%{transform:translateY(0);}
+    }
+    .btn {
+      display:inline-block;
+      margin-top:16px;
+      padding:12px 20px;
+      background:#ff4b77;
+      color:#fff;
+      text-decoration:none;
+      border-radius:10px;
+      font-weight:bold;
+    }
+    .btn.whatsapp {
+      background:#25D366;
+      margin-left:8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="emoji">❤️🐄🤣 </div>
+    <h1>Hai Ayank ❤️</h1>
+    <p>
+      Kamu tahu nggak?  
+      Kalau aku pasti bahagia kalok ngomong sama kamu, 
+       I LOVE U.  
+      KAMU alasan aku selalu bahagia  💕
+    </p>
+    <a href="#" class="btn" id="copyUrl">Salin Link</a>
+    <a href="#" class="btn whatsapp" id="waShare">Bagikan via WhatsApp</a>
+  </div>
+
+  <script>
+    const copyBtn = document.getElementById("copyUrl");
+    const waBtn = document.getElementById("waShare");
+    const url = "https://your-domain.com/"; // ganti setelah hosting
+
+    copyBtn.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(url);
+        alert("Link berhasil disalin: " + url);
+      } catch {
+        prompt("Salin link
